@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&family=Vina+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	          colors: {
+	            clifford: '#da373d',
+	          },
+	          fontFamily:{
+	        	  'poppins':['Poppins', 'sans-serif'],
+	        	  'sigmar' : ['Sigmar','cursive'],
+	        	  'vina' :['Vina Sans', 'cursive']
+	          }
+	        }
+	      }
+	    }
+	  </script>
+</head>
+<body class="font-poppins bg-[#023535] text-white">
+	<div class=" flex items-center justify-between py-5 px-5 bg-[#0FC2C0]">
+		<h1 class="text-lg font-vina"><c class="text-[#023535]">Inquiry details</c> are saved to the DB</h1>
+		<form action="/logout" method="post">
+			<button class="bg-[#023535] text-white py-2 px-3 rounded" type="submit">Logout</button>
+		</form>
+	</div>
+</body>
+</html>

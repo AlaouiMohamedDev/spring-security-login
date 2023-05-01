@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S'autentifier</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&family=Vina+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	          colors: {
+	            clifford: '#da373d',
+	          },
+	          fontFamily:{
+	        	  'poppins':['Poppins', 'sans-serif'],
+	        	  'sigmar' : ['Sigmar','cursive'],
+	        	  'vina' :['Vina Sans', 'cursive']
+	          }
+	        }
+	      }
+	    }
+	  </script>
+
+</head>
+<body class="bg-[#023535] font-poppins">
+<div class="flex items-center  justify-center h-screen">
+	<form action="/login" method="post" class="bg-[#0FC2C0] p-[50px] 2xl:p-[90px] space-y-4 rounded shadow- flex flex-col mx-5 lg:mx-0 w-full lg:w-1/3">
+		  <h1 class="text-4xl font-bold text-center font-sigmar">Se connecter</h1>
+		  <p class="font-vina text-2xl text-center">
+		  	Bienvenu dans votre espace privé
+		  </p>
+		<div class="flex flex-col space-y-2">
+		  <label for="username" class=" font-bold text-md ">Nom d'utilisateur</label>		
+	  		<input type="text" id="username" name="username" placeholder="Username"  class="focus:border-[#008F8C]  text-white bg-[#015958] outline-none py-2 px-5 text-md placeholder:text-gray-400 rounded border border-[#023535]"/>
+		</div>
+		<div class="flex flex-col space-y-2">
+		  <label for="password" class=" font-bold text-md ">Password:</label>
+		  <input type="password" id="password" name="password" placeholder="password" class="focus:border-[#008F8C] text-white bg-[#015958] outline-none py-2 px-5 text-md placeholder:text-gray-400 rounded border border-[#023535]"/>
+		</div>
+	 	 <input type="submit" value="Log In" class="py-3 bg-[#023535] rounded text-white font-sigmar cursor-pointer"/>
+	  <div class="">
+	  </div>
+	</form>
+</div>
+
+
+</body>
+</html>
